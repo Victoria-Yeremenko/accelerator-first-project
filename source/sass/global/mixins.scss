@@ -1,0 +1,33 @@
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@mixin list-item-reset {
+  display: block;
+}
+
+@mixin link-reset {
+  display: block;
+  color: $black;
+  text-decoration: none;
+}
+
+@mixin text ($size, $height, $weight: 400, $color: $black) {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+  color: $color;
+}
+
+@mixin text-reset {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@mixin center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

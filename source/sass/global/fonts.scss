@@ -1,0 +1,41 @@
+/* Alumni Sans */
+@font-face {
+  font-family: "Alumni Sans", "Arial", sans-serif;;
+  font-style: normal;
+  font-weight: 600;
+  src: url("../../fonts/alumnisans-semibold.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Alumni Sans", "Arial", sans-serif;;
+  font-style: normal;
+  font-weight: 800;
+  src: url("../../fonts/alumnisans-extrabold.woff2") format("woff2");
+  font-display: swap;
+}
+
+/* Roboto Condensed */
+@font-face {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  src: url("../../fonts/roboto-condensed-light.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/roboto-condensed-regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../../fonts/roboto-condensed-bold.woff2") format("woff2");
+  font-display: swap;
+}
