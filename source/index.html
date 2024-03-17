@@ -20,22 +20,86 @@
 
 <body class="page-body">
   <!-- пример использования спрайта -->
-  <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-  <svg>
+
+  <!-- <svg>
     <use href="/__spritemap#sprite-user"></use>
-  </svg>
+  </svg> -->
   <!-- примеры требуемых атрибутов data-test="*" -->
-  <div data-test="hero">hero</div>
-  <div data-test="about">about</div>
-  <div data-test="price">price</div>
-  <div data-test="games">games</div>
-  <div data-test="juri">juri</div>
-  <div data-test="features">features</div>
-  <div data-test="offers">offers</div>
-  <div data-test="faq">faq</div>
-  <div data-test="reviews">reviews</div>
-  <div data-test="form">form</div>
-  <div data-test="footer">footer</div>
+  <main>
+    <h1 class='visually-hidden'>Фитнес центр Supergym в Омске</h1>
+    <section class="hero" data-test="hero">
+      <div class="container">
+        <header class="hero__header">
+          <picture>
+            <source type='image/svg+xml' media="(min-width: 1366px)" srcset="img/logo-desktop.svg" width="130"
+              height="26" />
+            <source type='image/svg+xml' media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="110"
+              height="22" />
+            <img class='logo' width='100' height='20' src="img/logo-mobile.svg" alt="Логотип фитнес-центра Supergym.">
+          </picture>
+
+          <a class="phone-link" href="tel:+88005555555"> 8 800 555-55-55 </a>
+        </header>
+        <div class="hero__content">
+          <div class="hero__content-wrapper">
+            <div class="hero__text-wrapper">
+              <p class="hero__location">Омск</p>
+              <p class="hero__lead">Фитнес центр</p>
+            </div>
+            <ul class='hero__list list'>
+              <li>Тренажёрный зал</li>
+              <li>Групповые занятия</li>
+              <li>Кардио-зона</li>
+            </ul>
+            <a class='hero__link button' href="#price" class="link">Купить абонемент</a>
+          </div>
+          <picture>
+            <source type="image/webp" media="(min-width: 1366px)" srcset="
+                  img/hero-img-desktop.webp 1x,
+                  img/hero-img-desktop@2x.webp 2x
+                " width="500" height="524" />
+            <img class='hero__image' src="img/hero-img.webp" width='324' height='390' srcset='img/hero-img@2x.webp 2x'
+              loading="lazy" alt="Спортивный мужчина в майке супермена." />
+          </picture>
+        </div>
+      </div>
+    </section>
+    <section class='about' data-test="about">
+      <h2 class="visually-hidden">О нас. Наш тренажерный зал</h2>
+      <div class="about__content">
+        <p class="about__lead section-lead">Тренажёрный зал</p>
+        <p class="about__intro section-intro">Просторный зал площадью 900 кв/м</p>
+        <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный
+          зал оснащён всем необходимым современным оборудованием для всех спортсменов.</p>
+      </div>
+      <img src="" alt="" class="about__image">
+      <div class="about__video">
+        <a class='video__link' href="https://www.youtube.com/watch?v=9TZXsZItgdw" class="video__link">
+          <picture>
+            <source media="(min-width: )" srcset="" type="image/webp">
+            <img src="" alt="Картинка" class="video__media">
+          </picture>
+        </a>
+        <button class="video__button" type="button">
+          <span class="visually-hidden">Запустить видео</span>
+        </button>
+      </div>
+    </section>
+    <section class='price' id="price">
+      <h2 class="price__title section-title">Абонементы</h2>
+
+    </section>
+    <div data-test="games">games</div>
+    <div data-test="juri">juri</div>
+    <div data-test="features">features</div>
+    <div data-test="offers">offers</div>
+    <div data-test="faq">faq</div>
+    <div data-test="reviews">reviews</div>
+    <div data-test="form">form</div>
+  </main>
+  <footer data-test="footer">
+    footer
+  </footer>
   <script type="module" src="js/main.js"></script>
 </body>
 

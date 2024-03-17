@@ -1,0 +1,16 @@
+.button {
+  font-family: $font-family;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 22px;
+  min-height: 60px;
+
+  @media (min-width: $desktop-width) {
+    padding: 27px;
+  }
+}

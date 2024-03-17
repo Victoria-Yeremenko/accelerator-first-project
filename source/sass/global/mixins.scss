@@ -10,7 +10,6 @@
 
 @mixin link-reset {
   display: block;
-  color: $black;
   text-decoration: none;
 }
 
@@ -26,7 +25,7 @@
   margin-bottom: 0;
 }
 
-@mixin center-content {
+@mixin flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
