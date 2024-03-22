@@ -1,0 +1,132 @@
+.about {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  background: $white;
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding: 60px 45px 120px 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1366px;
+    padding: 120px 103px 240px 103px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+  }
+}
+
+.about__text {
+  width: 290px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 490px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 355px;
+    margin: 0;
+  }
+}
+
+.about__header {
+  margin-bottom: 12px;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 25px;
+    text-align: left;
+  }
+}
+
+.about__intro {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 111%;
+  text-align: center;
+  margin-bottom: 36px;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 100%;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 22px;
+    margin-bottom: 95px;
+    text-align: left;
+  }
+}
+
+// Текстовый редактор
+.about__text {
+  .wysiwyg-wrapper p {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 157%;
+
+    &:last-child {
+      display: none;
+
+      @media (min-width: $desktop-width) {
+        display: block;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 150%;
+      text-align: center;
+    }
+
+    @media (min-width: $desktop-width) {
+      text-align: left;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.about__video {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 50%;
+    bottom: 35px;
+    transform: translateX(-50%);
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 50%;
+    bottom: 125px;
+    transform: translateX(-50%);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
