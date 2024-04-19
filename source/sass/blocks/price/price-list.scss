@@ -1,14 +1,58 @@
 .price-list {
+  position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 35px;
+  z-index: 5;
 
   @media (min-width: $tablet-width) {
     gap: 40px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 275px;
+      height: 328px;
+      bottom: -47.72px;
+      right: -59.42px;
+      background-image: url("../../../img/price/weights-tablet.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      transform: rotate(-30deg);
+      z-index: -1;
+
+      @media (resolution >= 2dppx) {
+        background-image: url("../../../img/price/weights-tablet@2x.png");
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
+    justify-content: center;
+    align-items: start;
     flex-direction: row;
     flex-wrap: wrap;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 321px;
+      height: 384px;
+      bottom: -89.97px;
+      right: -195.5px;
+      background-image: url("../../../img/price/weights-desktop.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      transform: rotate(-30deg);
+      z-index: -1;
+
+      @media (resolution >= 2dppx) {
+        background-image: url("../../../img/price/weights-desktop@2x.png");
+      }
+    }
   }
 }
+

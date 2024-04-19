@@ -2,23 +2,27 @@
 // ---------------------------------
 
 @import "vendor/normalize";
-
-@import "global/fonts.scss";
-@import "global/variables.scss";
-@import "global/mixins.scss";
-@import "global/global.scss";
-@import "global/utils.scss";
-
-@import "blocks/container.scss";
-@import "blocks/logo.scss";
-@import "blocks/button.scss";
-@import "blocks/list.scss";
-@import "blocks/section-header.scss";
-
-@import "blocks/hero/hero.scss";
-@import "blocks/hero/phone-link.scss";
-@import "blocks/about/about.scss";
-@import "blocks/about/video.scss";
-@import "blocks/price/price.scss";
-@import "blocks/price/price-list.scss";
-@import "blocks/price/price-card.scss";
+@import "global/fonts";
+@import "global/variables";
+@import "global/mixins";
+@import "global/global";
+@import "global/utils";
+@import "blocks/wysiwyg-wrapper";
+@import "blocks/container";
+@import "blocks/logo";
+@import "blocks/button";
+@import "blocks/list";
+@import "blocks/section-header";
+@import "blocks/hero/hero";
+@import "blocks/hero/phone-link";
+@import "blocks/about/about";
+@import "blocks/about/video";
+@import "blocks/price/price";
+@import "blocks/price/price-tabs";
+@import "blocks/price/price-list";
+@import "blocks/price/price-card";
+@import "blocks/games/games";
+@import "blocks/games/date";
+@import "blocks/features/features";
+@import "blocks/features/features-card";
+@import "blocks/reviews/reviews";

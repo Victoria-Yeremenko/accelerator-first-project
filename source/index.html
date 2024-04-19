@@ -5,17 +5,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SUPERGYM</title>
-  <link rel="preload" href="fonts/alumnisans-extrabold.woff2" type="font/woff2" as="font" crossorigin="anonymous" />
-  <link rel="preload" href="fonts/alumnisans-semibold.woff2" type="font/woff2" as="font" crossorigin="anonymous" />
-  <link rel="preload" href="fonts/roboto-condensed-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous" />
-  <link rel="preload" href="fonts/roboto-condensed-light.woff2" type="font/woff2" as="font" crossorigin="anonymous" />
-  <link rel="preload" href="fonts/roboto-condensed-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous" />
+  <link rel="preload" href="fonts/alumnisans-extrabold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/alumnisans-semibold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-condensed-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-condensed-light.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-condensed-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="vendor/swiper.css"> -->
   <link rel="stylesheet" href="sass/style.scss">
-  <link rel="icon" href="favicon.ico" />
-  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml" />
-  <link rel="apple-touch-icon" href="favicons/apple.png" />
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple.png">
   <!-- 180×180 -->
-  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page-body">
@@ -26,19 +27,20 @@
   </svg> -->
   <!-- примеры требуемых атрибутов data-test="*" -->
   <main>
-    <h1 class='visually-hidden'>Фитнес центр Supergym в Омске</h1>
+    <h1 class="visually-hidden">Фитнес центр Supergym в Омске</h1>
     <section class="hero" data-test="hero">
+      <h2 class="visually-hidden">Визитка нашего фитнес-центра</h2>
       <div class="container">
         <header class="hero__header">
           <picture>
-            <source type='image/svg+xml' media="(min-width: 1366px)" srcset="img/logo-desktop.svg" width="130"
-              height="26" />
-            <source type='image/svg+xml' media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="110"
-              height="22" />
-            <img class='logo' width='100' height='20' src="img/logo-mobile.svg" alt="Логотип фитнес-центра Supergym.">
+            <source type="image/svg+xml" media="(min-width: 1366px)" srcset="img/logo-desktop.svg" width="130"
+              height="26">
+            <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="110"
+              height="22">
+            <img class="logo" width="100" height="20" src="img/logo-mobile.svg" alt="Логотип фитнес-центра Supergym.">
           </picture>
 
-          <a class="phone-link" href="tel:+88005555555"> 8 800 555-55-55 </a>
+          <a class="phone-link" href="tel:+88005555555">8 800 555-55-55</a>
         </header>
         <div class="hero__content">
           <div class="hero__content-wrapper">
@@ -46,29 +48,30 @@
               <p class="hero__location">Омск</p>
               <p class="hero__lead">Фитнес центр</p>
             </div>
-            <ul class='hero__list list'>
+            <ul class="hero__list list">
               <li>Тренажёрный зал</li>
               <li>Групповые занятия</li>
               <li>Кардио-зона</li>
             </ul>
-            <a class='hero__link button' href="#price" class="link">Купить абонемент</a>
+            <a class="hero__link button button--hero link" href="#price">Купить абонемент</a>
           </div>
           <picture>
             <source type="image/webp" media="(min-width: 1366px)" srcset="
                   img/hero-img-desktop.webp 1x,
                   img/hero-img-desktop@2x.webp 2x
-                " width="500" height="524" />
-            <img class='hero__image' src="img/hero-img.webp" width='324' height='390' srcset='img/hero-img@2x.webp 2x'
-              loading="lazy" alt="Спортивный мужчина в майке супермена." />
+                " width="500" height="524">
+            <img class="hero__image" src="img/hero-img.webp" width="324" height="390" srcset="img/hero-img@2x.webp 2x"
+              loading="lazy" alt="Спортивный мужчина в майке супермена.">
           </picture>
         </div>
       </div>
     </section>
-    <section class='about' data-test="about">
+    <section class="about" data-test="about">
+      <h2 class="visually-hidden">О нашем тренажерном зале</h2>
       <div class="about__text">
-        <h2 class="about__header section-header">Тренажёрный зал</h2>
+        <p class="about__header section-header">Тренажёрный зал</p>
         <p class="about__intro section-intro">Просторный зал площадью 900 кв/м</p>
-        <div class="wysiwyg-wrapper">
+        <div class="wysiwyg-wrapper wysiwyg-wrapper--about">
           <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
             Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.</p>
           <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре
@@ -76,22 +79,22 @@
         </div>
       </div>
       <picture>
-        <source type='image/webp' media="(min-width: 1366px)"
-          srcset="img/about/gym-desktop.webp 1x, img/about/gym-desktop@2x.webp 2x" width="660" height="400" />
-        <source type='image/webp' media="(min-width: 768px)"
-          srcset="img/about/gym-tablet.webp 1x, img/about/gym-tablet@2x.webp 2x" width="678" height="345" />
-        <img class='about__image' src="img/about/gym-mobile.webp" srcset='img/about/gym-mobile@2x.webp 2x'
-          loading="lazy" width='320' height='280' alt="Наш тренажерный зал." />
+        <source type="image/webp" media="(min-width: 1366px)"
+          srcset="img/about/gym-desktop.webp 1x, img/about/gym-desktop@2x.webp 2x" width="660" height="400">
+        <source type="image/webp" media="(min-width: 768px)"
+          srcset="img/about/gym-tablet.webp 1x, img/about/gym-tablet@2x.webp 2x" width="678" height="345">
+        <img class="about__image" src="img/about/gym-mobile.webp" srcset="img/about/gym-mobile@2x.webp 2x"
+          loading="lazy" width="320" height="280" alt="Наш тренажерный зал.">
       </picture>
       <div class="about__video video">
-        <a class='video__link' href="https://www.youtube.com/watch?v=9TZXsZItgdw">
+        <a class="video__link" href="https://www.youtube.com/watch?v=9TZXsZItgdw">
           <picture>
-            <source type='image/webp' media="(min-width: 1366px)"
-              srcset="img/about/video-desktop.webp 1x, img/about/video-desktop@2x.webp 2x" width="360" height="230" />
-            <source type='image/webp' media="(min-width: 768px)"
-              srcset="img/about/video-tablet.webp 1x, img/about/video-tablet@2x.webp 2x" width="270" height="170" />
-            <img class="video__media" src="img/about/video-mobile.webp" srcset='img/about/video-mobile@2x.webp 2x'
-              loading="lazy" width='320' height='170' alt="Видео тренажерного зала." />
+            <source type="image/webp" media="(min-width: 1366px)"
+              srcset="img/about/video-desktop.webp 1x, img/about/video-desktop@2x.webp 2x" width="360" height="230">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/about/video-tablet.webp 1x, img/about/video-tablet@2x.webp 2x" width="270" height="170">
+            <img class="video__media" src="img/about/video-mobile.webp" srcset="img/about/video-mobile@2x.webp 2x"
+              loading="lazy" width="320" height="170" alt="Видео тренажерного зала.">
           </picture>
         </a>
         <button class="video__button" type="button">
@@ -99,45 +102,178 @@
         </button>
       </div>
     </section>
-    <section class='price' id="price">
+    <section class="price" data-test="price">
       <div class="container">
         <h2 class="price__header section-header">Абонементы</h2>
-        <ol class='price__tabs'>
-          <li><button>1 месяц</button></li>
-          <li><button>6 месяцев</button></li>
-          <li><button>12 месяцев</button></li>
+        <ol class="price__tabs price-tabs">
+          <li class="price-tabs__item">
+            <button class="price-tabs__button price-tabs__button--active" type="button" data-price-tab-id="1 month">1
+              месяц</button>
+          </li>
+          <li class="price-tabs__item">
+            <button class="price-tabs__button" type="button" data-price-tab-id="6 months">6 месяцев</button>
+          </li>
+          <li class="price-tabs__item">
+            <button class="price-tabs__button" type="button" data-price-tab-id="12 months">12 месяцев</button>
+          </li>
         </ol>
         <ul class="price__list price-list">
-          <li class='price-list__item price-card'>
+          <li class="price-list__item price-card" data-price-card-id="personal" id="personal">
             <h3 class="price-card__title">С тренером</h3>
             <p class="price-card__description">12 занятий</p>
             <div class="price-card__price-wrapper">
-              <p class="price-card__price price-card__price--shadow" aria-hidden="true">5000</p>
-              <p class="price-card__price">5000</p>
+              <p class="price-card__price price-card__price--shadow" aria-hidden="true">5000<span
+                  class="visually-hidden">рублей</span></p>
+              <p class="price-card__price price-card__price--main">5000<span class="visually-hidden">рублей</span></p>
             </div>
-            <a href="#" class="price__link button button--secondary">Купить абонемент</a>
+            <a class="price__link button button--secondary" href="#">Купить абонемент</a>
           </li>
-          <li class='price-list__item price-card'>
+          <li class="price-list__item price-card" id="daytime">
             <h3 class="price-card__title">Дневной</h3>
             <p class="price-card__description">с 8:00 до 17:00</p>
-            <p class="price-card__price">1700</p>
-            <a href="#" class="price__link button button--secondary">Купить абонемент</a>
+            <div class="price-card__price-wrapper">
+              <p class="price-card__price price-card__price--shadow" aria-hidden="true">1700<span
+                  class="visually-hidden">рублей</span></p>
+              <p class="price-card__price price-card__price--main">1700<span class="visually-hidden">рублей</span></p>
+            </div>
+            <a class="price__link button button--secondary" href="#">Купить абонемент</a>
           </li>
-          <li class='price-list__item price-card'>
+          <li class="price-list__item price-card" id="fulltime">
             <h3 class="price-card__title">Полный день</h3>
             <p class="price-card__description">с 8:00 до 22:00</p>
-            <p class="price-card__price">2700</p>
-            <a href="#" class="price__link button button--secondary">Купить абонемент</a>
+            <div class="price-card__price-wrapper">
+              <p class="price-card__price price-card__price--shadow" aria-hidden="true">2700<span
+                  class="visually-hidden">рублей</span></p>
+              <p class="price-card__price price-card__price--main">2700<span class="visually-hidden">рублей</span></p>
+            </div>
+            <a class="price__link button button--secondary" href="#">Купить абонемент</a>
           </li>
         </ul>
       </div>
     </section>
-    <div data-test="games">games</div>
+    <section class="games" data-test="games">
+      <div class="games__wrapper container">
+        <h2 class="visually-hidden">Клубные соревнования</h2>
+        <div class="games__text-wrapper">
+          <p class="games__lead">SUPER GAMES</p>
+          <div class="games__date date">
+            <div class="date__wrapper">
+              <p class="date__label">Дата</p>
+              <time class="date__date" datetime="2019-03-07">7 <span class="date__date date__date--small">Марта
+                  2019</span></time>
+            </div>
+            <div class="date__wrapper">
+              <p class="date__label">Время</p>
+              <time class="date__time" datetime="12:00">12:00</time>
+            </div>
+          </div>
+        </div>
+        <p class="games__text">Ежегодные соревнования по CrossFit</p>
+        <a class="games__link button button--games" href="#">Заполнить заявку</a>
+      </div>
+    </section>
     <div data-test="juri">juri</div>
-    <div data-test="features">features</div>
+    <section class="features" data-test="features">
+      <div class="container container--features">
+        <h2 class="features__title section-header">Наши преимущества</h2>
+        <ul class="features__list">
+          <li class="features__item features-card">
+            <div class="features-card__wrapper">
+              <p class="features-card__stats"><b class="features-card__stats-text">900</b></p>
+              <p class="features-card__stats-caption">кв/м</p>
+            </div>
+            <div class="features-card__wrapper">
+              <h3 class="features-card__title">Площадь</h3>
+              <p class="features-card__text">Занимайтесь без очередей и толкучки</p>
+            </div>
+          </li>
+          <li class="features__item features-card">
+            <div class="features-card__wrapper">
+              <p class="features-card__stats"><b class="features-card__stats-text">70</b></p>
+              <p class="features-card__stats-caption">машин</p>
+            </div>
+            <div class="features-card__wrapper">
+              <h3 class="features-card__title">Собственная парковка</h3>
+              <p class="features-card__text">Вы всегда найдёте место для своей машины на нашей парковке</p>
+            </div>
+          </li>
+          <li class="features__item features-card">
+            <div class="features-card__wrapper">
+              <p class="features-card__stats"><b class="features-card__stats-text">100</b></p>
+              <p class="features-card__stats-caption">Тренажеров</p>
+            </div>
+            <div class="features-card__wrapper">
+              <h3 class="features-card__title visually-hidden">Оборудование</h3>
+              <p class="features-card__text">Современные тренажёры на все группы мышц</p>
+            </div>
+          </li>
+          <li class="features__item features-card">
+            <div class="features-card__wrapper">
+              <p class="features-card__stats"><b class="features-card__stats-text">350</b></p>
+              <p class="features-card__stats-caption">мест</p>
+            </div>
+            <div class="features-card__wrapper">
+              <h3 class="features-card__title">Комфорт</h3>
+              <p class="features-card__text">Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+            </div>
+          </li>
+          <li class="features__item features-card">
+            <div class="features-card__wrapper">
+              <p class="features-card__stats"><b class="features-card__stats-text">5+</b></p>
+              <p class="features-card__stats-caption">лет</p>
+            </div>
+            <div class="features-card__wrapper">
+              <h3 class="features-card__title">Тренерский опыт</h3>
+              <p class="features-card__text">Добивайтесь своих целей быстрее с профессиональным тренером</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
     <div data-test="offers">offers</div>
     <div data-test="faq">faq</div>
-    <div data-test="reviews">reviews</div>
+    <section class="reviews container" data-test="reviews">
+      <h2 class="reviews__header section-header section-header--reviews">Отзывы</h2>
+      <div class="swiper reviews__swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <article class="reviews__item wysiwyg-wrapper">
+              <h3 class="visually-hidden">Отзыв 1 из 2</h3>
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/reviews/orlova-tablet.webp 1x, img/reviews/orlova-tablet@2x.webp 2x" width="80"
+                  height="80">
+                <img src="img/reviews/orlova-mobile.webp" srcset="img/reviews/orlova-mobile@2x.webp 2x" width="68"
+                  height="68" alt="Фото Анны Орловой.">
+              </picture>
+              <cite>Анна Орлова</cite>
+              <blockquote>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют,
+                персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</blockquote>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <article class="reviews__item wysiwyg-wrapper">
+              <h3 class="visually-hidden">Отзыв 2 из 2</h3>
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/reviews/smirnova-tablet.webp 1x, img/reviews/smirnova-tablet@2x.webp 2x" width="80"
+                  height="80">
+                <img src="img/reviews/smirnova-mobile.webp" srcset="img/reviews/smirnova-mobile@2x.webp 2x" width="68"
+                  height="68" alt="Фото Кристины Смирновой.">
+              </picture>
+              <cite>Кристина Смирнова</cite>
+              <blockquote>«Много лет посещаю данный зал. Отличные тренажёры, талантливые тренеры, есть детская комната.
+                Часто проводят акции, цены доступные.»
+              </blockquote>
+            </article>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <!-- <button type="button" class="swiper-button-prev">Назад</button>
+        <button type="button" class="swiper-button-next">Вперед</button> -->
+      </div>
+    </section>
     <div data-test="form">form</div>
   </main>
   <footer data-test="footer">

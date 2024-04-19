@@ -1,0 +1,124 @@
+.price-tabs {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 34px;
+  border-bottom: 1px solid rgba(#787878, 0.2);
+
+  @media (min-width: $tablet-width) {
+    width: 310px;
+    min-height: 28px;
+    border-bottom: 2px solid rgba(#787878, 0.2);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 350px;
+    min-height: 30px;
+  }
+}
+
+.price-tabs__button {
+  background-color: transparent;
+  padding-bottom: 17px;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  border: none;
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: rgba($base, 0.5);
+  cursor: pointer;
+
+  &:hover {
+    color: rgba($base, 0.7);
+    box-shadow: 0 1px #787878;
+  }
+
+  &:focus-visible {
+    color: $base;
+    box-shadow: 0 1px $base;
+    outline: none;
+  }
+
+  &:active {
+    color: $base;
+    box-shadow: 0 1px #d10a42;
+  }
+
+  &:disabled {
+    color: rgba($base, 0.3);
+    box-shadow: 0 1px rgba($base, 0.3);
+  }
+
+  &--active {
+    color: $base;
+    box-shadow: 0 1px #d10a42;
+
+    &:hover {
+      color: $base;
+      box-shadow: 0 1px #d10a42;
+    }
+
+    &:focus {
+      color: $base;
+      box-shadow: 0 1px #d10a42;
+    }
+
+    &:disabled {
+      color: rgba($base, 0.3);
+      box-shadow: 0 1px rgba($base, 0.3);
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 8px;
+    font-size: 18px;
+
+    &:hover {
+      color: rgba($base, 0.7);
+      box-shadow: 0 2px #787878;
+    }
+
+    &:focus-visible {
+      color: $base;
+      box-shadow: 0 2px $base;
+      outline: none;
+    }
+
+    &:active {
+      color: $base;
+      box-shadow: 0 2px #d10a42;
+    }
+
+    &:disabled {
+      color: rgba($base, 0.3);
+      box-shadow: 0 2px rgba($base, 0.3);
+    }
+
+    &--active {
+      color: $base;
+      box-shadow: 0 2px #d10a42;
+
+      &:hover {
+        color: $base;
+        box-shadow: 0 2px #d10a42;
+      }
+
+      &:focus {
+        color: $base;
+        box-shadow: 0 2px #d10a42;
+      }
+
+      &:disabled {
+        color: rgba($base, 0.3);
+        box-shadow: 0 2px rgba($base, 0.3);
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+  }
+}

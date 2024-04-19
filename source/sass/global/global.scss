@@ -23,6 +23,7 @@ body {
   font-family: $font-family;
   background-color: $white;
   color: $base;
+
   // text-align: left;
   display: flex;
   flex-direction: column;
@@ -40,7 +41,8 @@ h5 {
   @include text-reset;
 }
 
-ul, ol {
+ul,
+ ol {
   @include list-reset;
 }
 

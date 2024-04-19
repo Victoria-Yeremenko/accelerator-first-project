@@ -13,4 +13,10 @@
   @media (min-width: $desktop-width) {
     font-size: 54px;
   }
+
+  &--reviews {
+    @media (min-width: $tablet-width) {
+      font-size: 54px;
+    }
+  }
 }

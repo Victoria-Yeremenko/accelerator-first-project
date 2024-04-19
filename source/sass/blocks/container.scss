@@ -2,6 +2,10 @@
   width: 290px;
   margin: 0 auto;
 
+  &--features {
+    width: 100%;
+  }
+
   @media (min-width: $tablet-width) {
     width: 678px;
   }

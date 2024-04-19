@@ -1,0 +1,130 @@
+.features-card {
+  width: 290px;
+  font-family: $font-family;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    gap: 15px;
+    width: 100%;
+  }
+}
+
+.features-card__stats-text {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 100%;
+  background: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
+  background-clip: text;
+  color: transparent;
+
+  @media (min-width: $tablet-width) {
+    font-size: 70px;
+  }
+}
+
+.features-card__stats-caption {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: #2e35ac;
+
+  @media (min-width: $tablet-width) {
+    line-height: 157%;
+  }
+}
+
+.features-card__title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 111%;
+  margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 100%;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+}
+
+.features-card__text {
+  width: 230px;
+  margin: 0 auto;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 157%;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 150%;
+    text-align: left;
+    width: 100%;
+  }
+}
+
+.features-card:nth-child(3n) {
+  width: 100%;
+  background-color: $secondary;
+  color: $white;
+  padding-top: 30px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 320px;
+    margin: 0 auto;
+    padding: 35px;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    gap: 30px;
+  }
+
+  .features-card__stats-caption {
+    color: $white;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 100%;
+
+    @media (min-width: $tablet-width) {
+      font-size: 24px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 26px;
+    }
+  }
+
+  .features-card__text {
+    @media (min-width: $tablet-width) {
+      text-align: center;
+    }
+  }
+
+  .features-card__stats {
+    margin-bottom: 5px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 25px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 10px;
+    }
+  }
+
+  .features-card__stats-text {
+    color: $white;
+  }
+}

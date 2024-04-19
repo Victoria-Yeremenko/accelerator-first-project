@@ -1,5 +1,6 @@
 .phone-link {
   @include link-reset;
+
   font-family: $font-family;
   font-weight: 700;
   font-size: 22px;
@@ -20,6 +21,7 @@
 
   &:focus {
     color: $secondary;
+    outline: none;
   }
 
   &:active {

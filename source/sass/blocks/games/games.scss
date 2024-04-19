@@ -1,0 +1,108 @@
+.games {
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.games__wrapper {
+  background-color: $red;
+
+  // background-color: #000146;
+  color: $white;
+  padding: 40px;
+  padding-bottom: 330px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-image: url("../../../img/games/games-mobile.jpg");
+  background-size: 290px 290px;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+
+  @media (resolution >= 2dppx) {
+    background-image: url("../../../img/games/games-mobile@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 348px;
+    padding: 40px;
+    padding-right: 418px;
+    gap: 10px;
+    background-image: url("../../../img/games/games-tablet.jpg");
+    background-size: 378px 348px;
+    background-repeat: no-repeat;
+    background-position: right center;
+
+    @media (resolution >= 2dppx) {
+      background-image: url("../../../img/games/games-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 500px;
+    padding: 60px 740px 98px 80px;
+    gap: 30px;
+    background-image: url("../../../img/games/games-desktop.jpg");
+    background-size: 660px 500px;
+    background-repeat: no-repeat;
+    background-position: right center;
+
+    @media (resolution >= 2dppx) {
+      background-image: url("../../../img/games/games-desktop@2x.jpg");
+    }
+  }
+}
+
+.games__text-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.games__lead {
+  font-family: $second-family;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 112%;
+  text-transform: uppercase;
+  margin-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 82px;
+    line-height: 117%;
+  }
+}
+
+.games__date {
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    flex-grow: 1;
+  }
+}
+
+.games__text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 125%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 133%;
+  }
+}
+
+.games__link {
+  @include link-reset;
+}

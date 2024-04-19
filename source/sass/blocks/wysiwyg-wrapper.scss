@@ -1,0 +1,72 @@
+// Текстовый редактор
+
+.wysiwyg-wrapper p {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 157%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    margin-bottom: 8px;
+  }
+}
+
+.wysiwyg-wrapper--about p {
+  &:last-child {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+}
+
+.wysiwyg-wrapper {
+  cite {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 111%;
+
+    @media (min-width: $tablet-width) {
+      font-size: 22px;
+      line-height: 100%;
+    }
+  }
+
+  blockquote {
+    margin: 0;
+    font-family: $font-family;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 157%;
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 150%;
+    }
+  }
+
+  img {
+    width: 68px;
+    height: 68px;
+    object-fit: cover;
+
+    text-indent: -100vw;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+}

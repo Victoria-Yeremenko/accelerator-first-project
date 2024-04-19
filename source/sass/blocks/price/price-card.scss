@@ -1,4 +1,5 @@
 .price-card {
+  position: relative;
   width: 290px;
   background-color: $white;
   padding: 50px 40px;
@@ -7,4 +8,127 @@
   justify-content: center;
   align-items: center;
   gap: 18px;
+
+  // &:hover {
+  //   cursor: pointer;
+  //   &::after {
+  //     content: "";
+  //     position: absolute;
+  //     display: block;
+  //     width: 100%;
+  //     height: 100%;
+  //     border: 7px solid;
+  //     border-image: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+  //     border-image-slice: 1;
+  //   }
+
+  //   .price__link {
+  //       border: none;
+  //       color: $white;
+  //       background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+  //   }
+  // }
+
+  @media (min-width: $tablet-width) {
+    width: 380px;
+    padding: 65px;
+    gap: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 360px;
+    gap: 18px;
+  }
 }
+
+.price-card__title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 100%;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 26px;
+  }
+}
+
+.price-card__description {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 157%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
+
+.price-card__price-wrapper {
+  @include flex-center;
+
+  position: relative;
+  height: 150px;
+}
+
+.price-card__price--shadow {
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 150%;
+  color: rgba(#e8e8e8, 0.48);
+
+  @media (min-width: $tablet-width) {
+    font-size: 100px;
+  }
+}
+
+.price-card__price--main {
+  position: absolute;
+  height: 90px;
+  bottom: 0;
+  padding-right: 34px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 150%;
+  text-align: center;
+  color: $accent;
+  background-image: url("../../../img/sprite/rouble.svg");
+
+  // background-image: url("/__spritemap#rouble");
+  background-size: 24px 34px;
+  background-repeat: no-repeat;
+  background-position: right 0 center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 44px;
+    background-image: url("/__spritemap#rouble-tablet");
+    background-size: 30px 42px;
+    background-repeat: no-repeat;
+    background-position: right 0 center;
+  }
+}
+
+.price__link:hover,
+.price__link:focus {
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: 7px solid;
+    border-image: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+    border-image-slice: 1;
+  }
+}
+

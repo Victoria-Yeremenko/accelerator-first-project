@@ -1,21 +1,89 @@
 .button {
+  // @include flex-center;
   font-family: $font-family;
   font-weight: 700;
   font-size: 12px;
   line-height: 100%;
   text-transform: uppercase;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
   border: 2px solid $white;
-  padding: 20px;
+  padding: 25px;
+  min-height: 66px;
 
   @media (min-width: $desktop-width) {
     padding: 25px;
+  }
+
+  &--hero {
+    @media (max-width: $mobile-width-only) {
+      padding: 22px;
+      min-height: 60px;
+    }
+
+    @media (max-width: $tablet-width-only) {
+      min-height: 56px;
+    }
+  }
+
+  &--games {
+    @media (max-width: $mobile-width-only) {
+      min-height: 60px;
+      padding: 22px;
+    }
+  }
+
+  &:hover {
+    color: $accent;
+    background-color: $white;
+  }
+
+  &:focus {
+    color: $accent;
+    background-color: rgba($white, 0.8);
+    border: 2px solid $black;
+    outline: none;
+  }
+
+  &:active {
+    color: $base;
+    background-color: $white;
+    border: 2px solid $white;
+  }
+
+  &:disabled {
+    color: rgba($white, 0.5);
+    border-color: rgba($white, 0.5);
   }
 
   &--secondary {
     color: $base;
     background-color: $white;
     border-color: $base;
+
+    &:hover {
+      border: none;
+      color: $white;
+      background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+    }
+
+    &:focus {
+      color: $white;
+      border: 2px solid $black;
+      background: linear-gradient(97.05deg, rgba(237, 2, 51, 0.8) 17.6%, rgba(0, 62, 183, 0.8) 95.31%);
+      outline: none;
+    }
+
+    &:active {
+      color: rgba($white, 0.7);
+      background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+      border: none;
+    }
+
+    &:disabled {
+      color: rgba($base, 0.3);
+      border: 2px solid rgba($base, 0.3);
+      background-color: $white;
+    }
   }
 }
